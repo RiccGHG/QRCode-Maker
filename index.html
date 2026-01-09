@@ -11,8 +11,8 @@
         <div class="text">
         <h1>QRCode Text</h1>
         <div style="display: flex; gap: 10px;" id="text">
-            <input type="text">
-            <button>Ok</button>
+            <textarea placeholder="example.com" cols="20" rows="3" minlength="1" maxlength="10"></textarea>
+            <button onclick="gen()">Submit</button>
         </div>
     </div>
     <div class="img">
@@ -20,10 +20,11 @@
         <div id="imgBorder">
             <img id="img" alt="QRcode" hidden>
         </div>
-        <button id="downloadBtn" disabled>Download</button>
+        <button id="downloadBtn" disabled onclick="download()">Download</button>
     </div>
     </div>
+    <a download="QRCode" hidden id="download"></a>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
 <script src="main.js"></script>
-</html>
+</html>s
