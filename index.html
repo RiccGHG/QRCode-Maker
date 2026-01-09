@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>QRCode Maker</title>
+</head>
+<body>
+    <div class="boxes">
+        <div class="text">
+        <h1>QRCode Text</h1>
+        <div style="display: flex; gap: 10px;" id="text">
+            <input type="text">
+            <button>Ok</button>
+        </div>
+    </div>
+    <div class="img">
+        <h1>QRCode Data</h1>
+        <div id="imgBorder">
+            <img id="img" alt="QRcode" hidden>
+        </div>
+        <button id="downloadBtn" disabled>Download</button>
+    </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+<script src="main.js"></script>
+</html>

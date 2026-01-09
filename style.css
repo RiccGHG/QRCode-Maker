@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  height: 100vh;
+  /* padding-bottom: 200px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, midnightblue, deepskyblue);
+  font-family: system-ui, sans-serif;
+}
+.boxes {
+  display: flex;
+  gap: 100px;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  align-items: center;
+  /* margin-left: 50px; */
+  margin-top: 100px;
+  gap: 20px;
+  padding: 15px 30px 40px;
+  height: 150px;
+  /* justify-content: center; */
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+}
+.img {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  /* margin-left: 50px; */
+  gap: 25px;
+  padding: 15px 30px 85px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+}
+#imgBorder {
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin: 0 auto;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  object-fit: contain;
+  background: #f0f0f0;
+}
+button {
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  border: 1.5px black solid;
+}
+button:disabled {
+  cursor: not-allowed;
+  border: 1px darkgray solid;
+}
+.text button {
+  background: rgb(55, 255, 112);
+}
+button:enabled {
+  transition: transform 0.4s ease, background-color 0.4s ease;
+}
+button:enabled:hover {
+  transform: scale(1.1);
+}
+button:enabled:active {
+  transition: transform 0.1s ease;
+  transform: scale(0.9);
+}
+.text button:active {
+  background: rgb(41, 228, 94);
+}
+input {
+  border-radius: 5px;
+  /* outline: none; */
+  outline: 1px solid;
+  background: rgb(238, 238, 238);
+  transition: background 0.4s ease;
+  border: none;
+}
+input:hover {
+  outline: 1px solid rgb(68, 68, 68);
+  background: rgb(223, 223, 223);
+}
+input:focus {
+  outline: 2px solid rgb(34, 199, 80);
+}
+.img button {
+  width: 145px;
+  align-self: center;
+}
+.img button:disabled {
+  background: rgb(196, 228, 254);
+}
+.img button:enabled {
+  background: rgb(84, 178, 255);
+}
+.img button:enabled:active {
+  background: rgb(38, 157, 255);
+}
