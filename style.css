@@ -40,6 +40,10 @@ body {
   border-radius: 15px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
 }
+#img {
+  max-width: 150px;
+  max-height: 150px;
+}
 #imgBorder {
   width: 150px;
   height: 150px;
@@ -148,6 +152,10 @@ textarea:focus {
     padding: 10px 20px 20px;
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+  }
+  #img {
+    max-width: 100px;
+    max-height: 100px;
   }
   #imgBorder {
     width: 100px;
