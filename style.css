@@ -43,6 +43,7 @@ body {
 #img {
   max-width: 150px;
   max-height: 150px;
+  border-radius: 8px;
 }
 #imgBorder {
   width: 150px;
