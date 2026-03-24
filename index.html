@@ -1,30 +1,72 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>QRCode Maker</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="boxes">
-        <div class="text">
+      <div class="text">
         <h1>QRCode Text</h1>
         <div id="text">
-            <textarea placeholder="example.com" cols="20" rows="3" minlength="1"></textarea>
-            <button onclick="gen()">Submit</button>
+          <textarea
+            placeholder="example.com"
+            cols="20"
+            rows="3"
+            minlength="1"
+          ></textarea>
+          <button onclick="gen()">
+            Submit
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="17"
+              height="17"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-send"
+            >
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+          </button>
         </div>
-    </div>
-    <div class="img">
+        <button id="txtThemeBtn" class="themeBtn" hidden></button>
+      </div>
+      <div class="img">
         <h1>QRCode Data</h1>
         <div id="imgBorder">
-            <img id="img" alt="QRcode" hidden>
+          <img id="img" alt="QRcode" hidden />
         </div>
-        <button id="downloadBtn" disabled onclick="download()">Download</button>
-    </div>
+        <button id="imgThemeBtn" hidden></button>
+        <button id="downloadBtn" disabled onclick="download()">
+          Download
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="17"
+            height="17"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-download"
+          >
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+        </button>
+      </div>
     </div>
     <a download="QRCode" hidden id="download"></a>
-</body>
-<script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
-<script src="main.js"></script>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+  <script src="main.js"></script>
 </html>
